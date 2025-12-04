@@ -1,26 +1,28 @@
+let contador = 1;
+
 function suma(a, b) {
   return a + b;
 }
 
-console.log("App lista");
+console.log('App lista');
 
-// Función para agregar un item a la lista
 function agregarItem(texto) {
-  const lista = document.getElementById("lista");
+  const lista = document.getElementById('lista');
   if (!lista) return;
 
-  const li = document.createElement("li");
-  li.textContent = texto;
+  const li = document.createElement('li');
+  li.textContent = `${contador}. ${texto}`;
   lista.appendChild(li);
+  contador++;
 }
 
-const boton = document.getElementById("btn-agregar");
+const boton = document.getElementById('btn-agregar');
 if (boton) {
-  boton.addEventListener("click", () => {
-    agregarItem("Nuevo ítem");
+  boton.addEventListener('click', () => {
+    agregarItem('Nuevo ítem');
   });
 }
 
-if (typeof module !== "undefined") {
+if (typeof module !== 'undefined') {
   module.exports = { suma };
 }
