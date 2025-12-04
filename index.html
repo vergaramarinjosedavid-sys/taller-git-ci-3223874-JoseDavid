@@ -1,16 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Taller Git & CI - SENA</title>
-</head>
-<body>
-  <h1>Hola SENA</h1>
-  <p>Este es mi primer taller con Git y CI.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taller Git & CI - SENA</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
 
-  <ul id="lista"></ul>
-  <button id="btn-agregar">Agregar</button>
+      h1 {
+        color: #1a7fbd;
+      }
 
-  <script src="./src/app.js"></script>
-</body>
+      #lista {
+        margin-top: 16px;
+        padding-left: 20px;
+      }
+
+      #btn-agregar {
+        margin-top: 12px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: none;
+        background-color: #1a7fbd;
+        color: white;
+        cursor: pointer;
+      }
+
+      #btn-agregar:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hola SENA</h1>
+    <p>Este es mi primer taller con Git y CI.</p>
+
+    <ul id="lista"></ul>
+    <button id="btn-agregar">oprime el boton</button>
+
+    <script src="./src/app.js"></script>
+  </body>
 </html>
