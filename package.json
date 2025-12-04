@@ -1,0 +1,14 @@
+{
+  "name": "taller-git-ci",
+  "version": "1.0.0",
+  "description": "Taller integrador Git & CI - SENA",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node --test",
+    "prettier:check": "npx prettier . --check",
+    "prettier:write": "npx prettier . --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
